@@ -1,0 +1,15 @@
+node_modules
+idea
+*.log
+.idea
+.vs
+*.vs
+*.sln
+*.njsproj
+*.log
+TD.Web/deployScripts/*.sh
+UpgradeLog.htm
+.vscode
+TD.Vue/src/test/unit/coverage
+tests/reports
+screenshots
