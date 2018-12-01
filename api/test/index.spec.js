@@ -58,6 +58,20 @@ test('Complex sum is returned correctly', t => {
     })
 })
 
+test('Check decimals work', (t) => {
+  const equation = encodeURIComponent('2.2+2.2')
+
+  request(app)
+    .get(`/calc/${equation}`)
+    .expect('Content-Type', /json/)
+    .expect(200)
+    .end((err, res) => {
+      t.error(err, 'No error')
+      t.same(res.body.result, 4.4, 'Sum Calculated correctly')
+      t.end()
+    })
+})
+
 ;['13^2', '() => null', '13===13', 'letters'].forEach(eq => {
   test('It does not accept really complex sums', t => {
     const equation = encodeURIComponent(eq)
