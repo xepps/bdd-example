@@ -1,0 +1,12 @@
+.pyc
+*.pyc
+.DS_STORE
+*.DS_STORE
+features/allure/**
+bin/
+env/
+**/debug.log
+features/debug*
+include/
+lib/
+pip-selfcheck.json

@@ -8,6 +8,17 @@ const buttons = [
   [0, '.', '=', '+']
 ]
 
+const symbolToClass = sym => {
+  return {
+    '/': 'divide',
+    '*': 'multiply',
+    '-': 'subtract',
+    '+': 'add',
+    '=': 'equals',
+    '.': 'dot'
+  }[sym] || sym
+}
+
 const buttonClass = btn => {
   if (btn === '=') return 'btn-primary'
   if (['/', '*', '-', '+'].includes(btn)) return 'btn-secondary'
@@ -54,7 +65,7 @@ class App extends Component {
                 return (
                   <div className="col" key={button + j}>{
                     <button
-                      className={`btn btn-block ${buttonClass(button)} button--${button}`}
+                      className={`btn btn-block ${buttonClass(button)} button--${symbolToClass(button)}`}
                       onClick={() => button === '=' ? this.equals() : this.updateEquation(button)}
                     >
                       {button}

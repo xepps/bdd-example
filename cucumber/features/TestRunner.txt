@@ -1,0 +1,2 @@
+behave -f allure_behave.formatter:AllureFormatter -o allure/results "MPB-186-Toggle-Active-Passive-Mode.feature" "MPB-205-Display-More-Info-View.feature" "MPB-230-To-Action-Filters.feature" "MPB-173-Policy-Creation-Component" "MPB-306-Policy-Listing-Page.feature" "MPB-375-Slack-Notification" "MPB-299-User-Journey-Testing_Part1" "MPB-299-User-Journey-Testing_Part2"
+allure generate allure/results/ -o allure/reports --clean
