@@ -1,0 +1,30 @@
+{
+  "name": "bdd-example",
+  "version": "1.0.0",
+  "description": "A calculator application to demonstrate bdd",
+  "main": "index.js",
+  "scripts": {
+    "install:api": "cd api && npm i",
+    "install:frontend": "cd frontend && npm i",
+    "start:api": "cd api && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "test:unit:api": "cd api && npm t && cd ..",
+    "test:unit:frontend": "cd frontend && npm t && cd ..",
+    "install": "npm run install:api | npm run install:frontend",
+    "start": "npm run start:api | npm run start:frontend",
+    "test": "npm run test:unit:api && npm run test:unit:frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xepps/bdd-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xepps/bdd-example/issues"
+  },
+  "homepage": "https://github.com/xepps/bdd-example#readme",
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}

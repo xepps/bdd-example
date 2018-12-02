@@ -46,7 +46,7 @@ class App extends Component {
       <div className="calculator container">
         <h1>Calculator</h1>
         <input className="input col" value={this.state.expression} readOnly />
-        <button className="btn btn-block btn-danger" onClick={() => this.clear()}>Clear</button>
+        <button className="btn button--clear btn-block btn-danger" onClick={() => this.clear()}>Clear</button>
         {buttons.map(row => {
           return (
             <div className="row" key={row.join()}>
@@ -54,7 +54,7 @@ class App extends Component {
                 return (
                   <div className="col" key={button + j}>{
                     <button
-                      className={`btn btn-block ${buttonClass(button)}`}
+                      className={`btn btn-block ${buttonClass(button)} button--${button}`}
                       onClick={() => button === '=' ? this.equals() : this.updateEquation(button)}
                     >
                       {button}

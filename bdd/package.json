@@ -1,0 +1,14 @@
+{
+  "name": "bdd",
+  "version": "1.0.0",
+  "description": "The E2E tests for the calculator application",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/selenium-cucumber-js/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "selenium-cucumber-js": "^1.6.2"
+  }
+}
