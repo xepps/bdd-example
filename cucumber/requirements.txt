@@ -16,7 +16,7 @@ parse-type==0.4.2
 pathlib==1.0.1
 pathlib2==2.3.2
 pluggy==0.8.0
-py==1.7.0
+py==1.10.0
 pycrypto==2.6.1
 pytest==3.10.0
 requests==2.20.0
